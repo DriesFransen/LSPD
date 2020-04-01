@@ -33,6 +33,7 @@
         <pattern>CURRENT WEATHER LOC</pattern>
         <template>
         Momenteel is het <lowercase><get name="weather_descr"></get></lowercase> en <get name="temp"></get> &#176;C in <get name="cur_weather_loc"></get>.
+        <think><set name="topic">WEATHER INFO</set></think>
         </template>
     </category>
 
