@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<category>
+        <pattern>*</pattern>
+        <that>*</that>
+        <template>
+        <thatstar/>
+        </template>
+    </category>
+
+
+<category>
+    <pattern>COLD DRY</pattern>
+    <template>
+        Het is vrij guur buiten, maar het is wel grotendeels droog. Trek dus een dikke jas en handschonen aan. 
+    </template>
+</category>
+
+<category>
+    <pattern>COLD RAIN</pattern>
+    <template>
+        Het is vrij guur buiten, en er is een grote kans op regen. Ik zou lekker thuis blijven. 
+    </template>
+</category>
+
+<category>
+    <pattern>MIDDLE DRY</pattern>
+    <template>
+        Het is aardig weer buiten, niet te warm en ook niet te koud en niet veel regen. Trek een jasje en een lange broek aan.
+    </template>
+</category>
+
+<category>
+    <pattern>MIDDLE RAIN</pattern>
+    <template>
+        Qua temperatuur is het weer niet verkeerd, maar er is wel een aardige regenkans. Hou regenkleding bij de hand.
+    </template>
+</category>
+
+<category>
+    <pattern>WARM DRY</pattern>
+    <template>
+        Het is heerlijk weer buiten. Trek een korte broek of zomerjurk aan en geniet er van.
+    </template>
+</category>
+
+<category>
+    <pattern>WARM DRY</pattern>
+    <template>
+        Het is een heerlijke temperatuur, maar het kan gaan regenen. Zomerkleding kan, maar kijk goed naar de lucht. 
+    </template>
+</category>
+
+
+<category>
+    <pattern>Zeker</pattern>
+    <template>
+        <srai>JA</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>Graag</pattern>
+    <template>
+        <srai>JA</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>Absoluut</pattern>
+    <template>
+        <srai>JA</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>Absoluut niet</pattern>
+    <template>
+        <srai>NEE</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>Op het moment niet</pattern>
+    <template>
+        <srai>NEE</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>Niet echt</pattern>
+    <template>
+        <srai>NEE</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>Niet bepaald</pattern>
+    <template>
+        <srai>NEE</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>Temperatuur</pattern>
+    <template>
+        <srai>DE TEMPERATUUR</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>Over de temperatuur</pattern>
+    <template>
+        <srai>DE TEMPERATUUR</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>wind</pattern>
+    <template>
+        <srai>DE WIND</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>* wind</pattern>
+    <template>
+        <srai>DE WIND</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>Wind *</pattern>
+    <template>
+        <srai>DE WIND</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>* wind *</pattern>
+    <template>
+        <srai>DE WIND</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>Hoe hard het waait</pattern>
+    <template>
+        <srai>DE WIND</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>kleding</pattern>
+    <template>
+        <srai>KLEDINGADVIES</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>* kleding</pattern>
+    <template>
+        <srai>KLEDINGADVIES</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>kleding *</pattern>
+    <template>
+        <srai>KLEDINGADVIES</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>* kleding *</pattern>
+    <template>
+        <srai>KLEDINGADVIES</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>kleren</pattern>
+    <template>
+        <srai>KLEDING</srai>
+    </template>
+</category>
+
+</aiml>

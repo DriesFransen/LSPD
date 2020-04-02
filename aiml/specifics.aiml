@@ -27,7 +27,7 @@
         </category>
         <category>
             <pattern>DE TEMPERATUUR</pattern>
-            <that>WAAROVER WILT U MEER INFORMATIE</that>
+            <that>* WILT U MEER INFORMATIE</that>
             <template>
                 <think><set name="topic">TEMPERATURE</set></think>
                 <srai>TEMP</srai>
@@ -35,7 +35,7 @@
         </category>
         <category>
             <pattern>DE WIND</pattern>
-            <that>WAAROVER WILT U MEER INFORMATIE</that>
+            <that>* WILT U MEER INFORMATIE</that>
             <template>
                 <think><set name="topic">WIND</set></think>
                 <srai>TEMP</srai>
@@ -43,10 +43,34 @@
         </category>
         <category>
             <pattern>ALGEMENE VOORSPELLING</pattern>
-            <that>WAAROVER WILT U MEER INFORMATIE</that>
+            <that>* WILT U MEER INFORMATIE</that>
             <template>
                 <think><set name="topic">FORECAST</set></think>
                 <srai>TEMP</srai>
+            </template>
+        </category>
+        <category>
+            <pattern>Kledingadvies</pattern>
+            <that>* WILT U MEER INFORMATIE</that>
+            <template>
+                <set name="flag">2</set>
+            </template>
+        </category>
+        <category>
+            <pattern>*</pattern>
+            <that>* WILT U MEER INFORMATIE</that>
+            <template>
+                Sorry, dat begrijp ik niet. 
+                Waarover wilt u meer informatie?
+            </template>
+        </category>
+
+        <category>
+            <pattern>*</pattern>
+            <that>* U MEER WETEN OVER HET WEER IN *</that>
+            <template>
+                Sorry, dat begrijp ik niet. 
+                Wilt u meer weten over het weer in <get name="cur_weather_loc"></get>?
             </template>
         </category>
     </topic>
@@ -141,7 +165,7 @@
             <pattern>JA</pattern>
             <that>* WILT U EEN WINDVOORSPELLING</that>
             <template>
-                Vandaag zal de wind hoofdzakelijk vanuit het <get name="d0windr"></get>en komen met windkracht <get name="d0windk"></get>. Morgen waait de wind vanuit  <get name="d1windr"></get>elijke richting met windkracht <get name="d0windk"></get> en overmorgen vanuit <get name="d1windr"></get>elijke richting met windkracht <get name="d0windk"></get>.
+                Vandaag zal de wind hoofdzakelijk vanuit het <get name="d0windr"></get>en komen met windkracht <get name="d0windk"></get>. Morgen waait de wind vanuit  <get name="d1windr"></get>elijke richting met windkracht <get name="d1windk"></get> en overmorgen vanuit <get name="d2windr"></get>elijke richting met windkracht <get name="d2windk"></get>.
                 <srai>TEMPQ2</srai>
             </template>
         </category>

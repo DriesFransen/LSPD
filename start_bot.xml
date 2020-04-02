@@ -14,6 +14,7 @@
             <learn>aiml/basic_chat.aiml</learn>
             <learn>aiml/weather_chat.aiml</learn>
 	    <learn>aiml/specifics.aiml</learn>
+            <learn>aiml/exceptions.aiml</learn>
             <!-- You can add more aiml files here -->
             <!--<learn>more_aiml.aiml</learn>-->
         </template>
