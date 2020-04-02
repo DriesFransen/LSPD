@@ -57,6 +57,14 @@
             </template>
         </category>
         <category>
+            <pattern>NEERSLAG</pattern>
+            <that>* WILT U MEER INFORMATIE</that>
+            <template>
+                <think><set name="topic">RAINFALL</set></think>
+                <srai>TEMP</srai>
+            </template>
+        </category>
+        <category>
             <pattern>*</pattern>
             <that>* WILT U MEER INFORMATIE</that>
             <template>
@@ -227,6 +235,41 @@
         <category>
             <pattern>NEE</pattern>
             <that>* WILT U EEN GRAFISCHE WEERGAVE VAN DE VERWACHTING VOOR DE KOMENDE 5 DAGEN</that>
+            <template>
+                Okay. 
+                <think><set name="topic">WEATHER INFO</set></think>
+                <srai>SPECIFICS</srai>
+            </template>
+        </category>
+    </topic>
+    
+    <topic name= "RAINFALL">
+        <category>
+            <pattern>TEMP</pattern>
+            <template>
+            Vandaag is de kans op neerslag <get name="d0neerslag"></get>%. Morgen is er <get name="d1neerslag"></get>% en overmorgen is er <get name="d2neerslag"></get>% kans op neerslag.
+            <srai>TEMPQ</srai>
+            </template>
+        </category>
+        
+        <category>
+            <pattern>TEMPQ</pattern>
+            <template>
+                Wilt u de buienradar voor de komende drie uur zien? 
+            </template>
+        </category>
+ 
+        <category>
+            <pattern>JA</pattern>
+            <that>* WILT U DE BUIENRADAR VOOR DE KOMENDE DRIE UUR ZIEN</that>
+            <template>
+                <think><set name="graph_temp">4</set></think>
+            </template>
+        </category>
+        
+        <category>
+            <pattern>NEE</pattern>
+            <that>* WILT U DE BUIENRADAR VOOR DE KOMENDE DRIE UUR ZIEN</that>
             <template>
                 Okay. 
                 <think><set name="topic">WEATHER INFO</set></think>

@@ -187,4 +187,32 @@
     </template>
 </category>
 
+<category>
+    <pattern>neerslag</pattern>
+    <template>
+        <srai>NEERSLAG</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>* neerslag</pattern>
+    <template>
+        <srai>NEERSLAG</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>neerslag *</pattern>
+    <template>
+        <srai>NEERSLAG</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>* neerslag *</pattern>
+    <template>
+        <srai>NEERSLAG</srai>
+    </template>
+</category>
+
 </aiml>
