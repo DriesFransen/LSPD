@@ -41,13 +41,21 @@
                 <srai>TEMP</srai>
             </template>
         </category>
+        <category>
+            <pattern>ALGEMENE VOORSPELLING</pattern>
+            <that>WAAROVER WILT U MEER INFORMATIE</that>
+            <template>
+                <think><set name="topic">FORECAST</set></think>
+                <srai>TEMP</srai>
+            </template>
+        </category>
     </topic>
     
     <topic name= "TEMPERATURE">
         <category>
             <pattern>TEMP</pattern>
             <template>
-                In hoorn is de temperatuur op het moment <get name="temp"></get> &#176;C. De gevoelstemperatuur is <get name="gtemp"></get> &#176;C, met een maximum van <get name="d0tmax"></get> &#176;C en een minimum van <get name="d0tmin"></get> &#176;C.
+                In <get name="cur_weather_loc"></get> is de temperatuur op het moment <get name="temp"></get> &#176;C. De gevoelstemperatuur is <get name="gtemp"></get> &#176;C, met een maximum van <get name="d0tmax"></get> &#176;C en een minimum van <get name="d0tmin"></get> &#176;C.
             <br/> 
             <srai>TEMPQ</srai>
             </template>
@@ -71,7 +79,7 @@
             <pattern>JA</pattern>
             <that>* WILT U EEN TEMPERATUURSVOORSPELLING</that>
             <template>
-                De voorspelling is dat het morgen maximaal <get name="d1tmax"></get> &#176;C en minimaal <get name="d1tmin"></get> &#176;C wordt, en overmorgen maximaal <get name="d2tmax"></get> &#176;C en een minimaal <get name="d2tmin"></get> &#176;C. 
+                De voorspelling is dat het morgen maximaal <get name="d1tmax"></get> &#176;C en minimaal <get name="d1tmin"></get> &#176;C wordt, en overmorgen maximaal <get name="d2tmax"></get> &#176;C en minimaal <get name="d2tmin"></get> &#176;C. 
                 <srai>TEMPQ2</srai>
             </template>
         </category>
@@ -167,7 +175,41 @@
             </template> 
         </category>
     </topic>
-    
+
+    <topic name= "FORECAST">
+        <category>
+            <pattern>TEMP</pattern>
+            <template>
+            De verwachting in de loop van de dag is: <lowercase><get name="weather_forecast"></get></lowercase>. Morgen  wordt het maximaal <get name="d1tmax"></get> &#176;C en minimaal <get name="d1tmin"></get> &#176;C, en overmorgen maximaal <get name="d2tmax"></get> &#176;C en minimaal <get name="d2tmin"></get> &#176;C.
+            <srai>TEMPQ</srai>
+            </template>
+        </category>
+        
+        <category>
+            <pattern>TEMPQ</pattern>
+            <template>
+                Wilt u een grafische weergave van de verwachting voor de komende 5 dagen? 
+            </template>
+        </category>
+ 
+        <category>
+            <pattern>JA</pattern>
+            <that>* WILT U EEN GRAFISCHE WEERGAVE VAN DE VERWACHTING VOOR DE KOMENDE 5 DAGEN</that>
+            <template>
+                <think><set name="graph_temp">3</set></think>
+            </template>
+        </category>
+        
+        <category>
+            <pattern>NEE</pattern>
+            <that>* WILT U EEN GRAFISCHE WEERGAVE VAN DE VERWACHTING VOOR DE KOMENDE 5 DAGEN</that>
+            <template>
+                Okay. 
+                <think><set name="topic">WEATHER INFO</set></think>
+                <srai>SPECIFICS</srai>
+            </template>
+        </category>
+    </topic>
     
     
 </aiml>
