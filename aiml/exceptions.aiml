@@ -14,7 +14,7 @@
 <category>
     <pattern>COLD DRY</pattern>
     <template>
-        Het is vrij guur buiten, maar het is wel grotendeels droog. Trek dus een dikke jas en handschonen aan. 
+        Het is vrij guur buiten, maar het is wel grotendeels droog. Trek dus een dikke jas en handschoenen aan. 
     </template>
 </category>
 
@@ -47,7 +47,7 @@
 </category>
 
 <category>
-    <pattern>WARM DRY</pattern>
+    <pattern>WARM RAIN</pattern>
     <template>
         Het is een heerlijke temperatuur, maar het kan gaan regenen. Zomerkleding kan, maar kijk goed naar de lucht. 
     </template>

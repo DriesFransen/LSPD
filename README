@@ -1,0 +1,40 @@
+This file contains some example queries and answers.
+
+Enter your message >> what trains are leaving at 23:25
+What is your current location?
+Enter your message >> Utrecht
+At 23:25, the following trains are leaving from Utrecht:
+Utrecht to Den Haag
+
+Since the current location has now been saved, providing this will no longer be necessary in the future.
+
+Enter your message >> what trains are arriving at 19:58
+At 19:58, the following trains are arriving at Utrecht:
+Amsterdam to Utrecht
+
+Enter your message >> i want to go to Den Haag
+The following trains are leaving for Den Haag:
+Utrecht to Den Haag at 07:25 AM
+[30 lines]
+Utrecht to Den Haag at 11:25 PM
+
+Enter your message >> i want to go to Den Haag at 16:55
+The following trains are leaving for Den Haag at 16:55:
+Utrecht to Den Haag at 04:55 PM
+
+Enter your message >> I want to arrive at Den Haag
+The following trains arrive at Den Haag:
+To Den Haag from Amsterdam at 08:10 AM
+[62 lines]
+To Den Haag from Utrecht at 11:57 PM
+
+Enter your message >> i want to arrive at Den Haag at 18:27
+The following trains arrive at Den Haag at 18:27:
+To Den Haag from Utrecht at 06:27 PM
+
+Enter your message >> what is the last train to Amsterdam?
+The last train from Utrecht to Amsterdam leaves at 11:05 PM and arrives at 11:33 PM.
+
+
+Enter your message >> what is the first train to Den Haag?
+The first train from Utrecht to Den Haag leaves at 07:25 AM and arrives at 07:57 AM.
