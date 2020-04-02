@@ -25,6 +25,7 @@
     <category>
         <pattern>CURRENT LOC *</pattern>
         <template>
+        <think><set name="flag">1</set></think>
         <think><set name="cur_weather_loc"><star/></set></think>
         </template>
     </category>
