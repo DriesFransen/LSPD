@@ -9,8 +9,17 @@
     </category>
     
     <category>
-        <pattern>WAT IS JOUW NAAM</pattern>
+        <pattern>WAT IS * NAAM</pattern>
         <template>Mijn naam is <bot name="name"></bot></template>
     </category>
 
+    <category>
+        <pattern>HOE HEET *</pattern>
+        <template>Ik heet <bot name="name"></bot></template>
+    </category>
+
+    <category>
+        <pattern>WIE BEN *</pattern>
+        <template>Ik ben <bot name="name"></bot></template>
+    </category>
 </aiml>

@@ -16,7 +16,7 @@
     </category>
 
     <category>
-        <pattern>HOE ZIET HET WEER ER UIT IN *</pattern>
+        <pattern>HOE ZIET HET WEER * IN *</pattern>
         <template>
             <srai>CURRENT LOC <star/></srai>
         </template>
