@@ -212,7 +212,7 @@
         <category>
             <pattern>TEMP</pattern>
             <template>
-            De verwachting in de loop van de dag is: <lowercase><get name="weather_forecast"></get></lowercase>. Morgen  wordt het maximaal <get name="d1tmax"></get> &#176;C en minimaal <get name="d1tmin"></get> &#176;C, en overmorgen maximaal <get name="d2tmax"></get> &#176;C en minimaal <get name="d2tmin"></get> &#176;C.
+            De verwachting in de loop van de dag is: <lowercase><get name="weather_forecast"></get></lowercase>. Morgen  wordt het <get name="d1weer"></get> en maximaal <get name="d1tmax"></get> &#176;C en minimaal <get name="d1tmin"></get> &#176;C, en overmorgen <get name="d2weer"></get> en maximaal <get name="d2tmax"></get> &#176;C en minimaal <get name="d2tmin"></get> &#176;C.
             <srai>TEMPQ</srai>
             </template>
         </category>
